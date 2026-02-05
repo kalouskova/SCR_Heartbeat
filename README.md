@@ -1,15 +1,19 @@
-# Heartbeat Clustering and Analysis
+# Heartbeat Anomaly Detection
 
-This repository contains a Jupyter Notebook for clustering and analyzing heartbeat patterns using unsupervised methods. The goal is to explore and cluster ECG signal segments to better understand heartbeat structure and potential anomalies.
+This repository contains the semestral project for NI-SCR focused on detecting anomalies in heartbeat data using machine learning and signal processing techniques.
+
+The project implements **autoencoders**, **Euclidean distance**, and **Dynamic Time Warping (DTW)** methods to classify normal and abnormal heartbeats.
+
+---
 
 ## 📌 Project Overview
 
-In this notebook, I apply clustering techniques to ECG heartbeat data to identify distinct heartbeat patterns and group similar signal segments. It demonstrates data preprocessing, feature extraction, clustering implementation, and results visualization, making it suitable as a practical example of **signal processing and unsupervised learning** workflows.
+The goal of this project is to identify abnormal heartbeats in ECG signals. Abnormal heartbeats are often indicative of **congestive heart failure (CHF)** or other cardiac conditions. The project applies:
 
-## 🧠 Key Features
+- **Autoencoders** for reconstruction-based anomaly detection.
+- **Euclidean distance** for simple similarity comparison.
+- **Dynamic Time Warping (DTW)** for time-series alignment and anomaly scoring.
 
-- ECG signal segment extraction and preprocessing  
-- Feature engineering for clustering  
-- Application of clustering algorithms (e.g., k‑means / hierarchical)  
-- Visualization of cluster results  
-- Insights into heartbeat data patterns
+We evaluate the performance using **F1 score** and **confusion matrices**, focusing on correct detection of abnormal heartbeats.
+
+---
